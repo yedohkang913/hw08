@@ -87,6 +87,8 @@ void my_stat(char * file_name){
 
   //Printing last access
   printf("Time of last access: %s\n", ctime(&(sb.st_atime)));
+
+  close(fd);
 }
 
 int main(){
